@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #09f024;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+ width: 120px;
+}
+
+.dropdown{
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav{
+    position: relative;
+    display: inline-block;
+    margin-right: 200px;
+}
+.page{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.page a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.page a:hover{
+    background-color: #ddd;
+}
+
+nav:hover .page{
+    display: block;
+}
+
+nav:hover .dropdown{
+    background-color: #057709;
+}
+
+.index{
+    display: flex;
+    padding: 20px;
+    
+}
+
+.index img{
+    width: 500px;
+    padding-right: 50px;
+}
+.index p{
+    font-size: large;
+    max-width: 300px;
+}
+main h2{
+    text-align: center;
+}
+
+
+footer{
+    background-color: #09f024 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+footer p{
+    text-align: left;
+    
+}
+
+.sosmed img{
+    width: 50px;
+}
+
+/* Products */
+
+.motor img{
+    width: 300px;
+    height: 300px;
+}
+
+
+
+.produk{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 120px;
+}
+
+
+
+.desc{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+desc p{
+    width: 100px;
+    height: 400px;
+    text-align: justify;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.deskripsi{
+    margin-bottom: 130px;
+}
+
+/* kawasako */
+
+.kaw-sec img{
+    width: 500px;
+}
+
+.exhib img{
+    width: 300px;
+}
+
+.exhib{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+
+    align-items: center;
+    padding: 10px;
+    
+
+}
+
+/* reserve */
+
+.reserve h2,p{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.radio img{
+    width: 500px;
+
+}
+.reserve form{
+    align-items: center;
+}
+
+.bio{
+    padding: 20px;
+}
+
+.carousel{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 30%;
+    margin: auto;
+    border: 5px solid black;
+    overflow: hidden;
+    position: relative;
+}
+.container img{
+    width: 500px;
+}
+
+.slider{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+#prev{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    cursor: pointer;
+}
+#next{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    
+    .index{
+        display: block;
+        
+    }
+    .index img{
+        width: 90%;
+        
+    }
+
+    .produk{
+        display: block;
+        text-align: center;
+        
+    }
+    .sosmed{
+        padding: 10px;
+        display: flex;
+    }
+    .sosmed img{
+        margin: 5px;
+    }
+
+    
+    .motor img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .motor{
+        width: 100px;
+        
+    }
+    .vix{
+        width: 100px;
+    }
+
+    .kaw-sec img{
+        width: 200px;
+    }
+    
+    .vic-sec img{
+        width: 200px;
+    }
+
+    .exhib img{
+        width: 170px;
+    }
+    .exhib{
+    
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    
+        align-items: center;
+        padding: 3px;
+        
+    
+    }
+}
